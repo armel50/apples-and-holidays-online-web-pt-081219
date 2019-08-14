@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
     # holiday_hash[season][holiday]
         supply = val.join(", ")
         p supply 
-    
+        key.split("_")
    
     end
     
