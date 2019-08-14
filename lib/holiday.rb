@@ -74,7 +74,8 @@ def all_supplies_in_holidays(holiday_hash)
     # holiday_hash[season][holiday]
         supply = val.join(", ")
         p supply 
-        capitalized_holiday =  key.to_s.split("_").collect{|el| el.capitalize}.join(" ")
+        capitalized_holiday =  key.to_s.split("_").collect{|el| el.capitalize}.join(" ") 
+        p capitalized_holiday
    
     end
     
