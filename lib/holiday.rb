@@ -27,15 +27,17 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
+  
  all_supplies =  holiday_hash[:winter].collect{ |key,val| val}
   all_supplies.flatten
+  
 end
 
 def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holiday|
   
-      puts "#{season.to_s.capitalize}:"
+    puts "#{season.to_s.capitalize}:"
   
     holiday.each do |key,val|
  
